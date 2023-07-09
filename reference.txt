@@ -1,0 +1,10 @@
+Intergrating contentful from scratch:
+ - https://blog.logrocket.com/using-contentful-cms-next-js/
+ 
+Values
+ - Contenful Management Token (Test Key): CFPAT-kZyPB7dlRsrU6NJAUDpQFHLe2vbUXm1mZXmhV7UuK0s
+ 
+TODO:
+ - Create new Contentful account with another email specifically for this project.
+    - Replace:
+        - env variables: CONTENTFUL_SPACE_ID, CONTENTFUL_MANAGEMENT_TOKEN
