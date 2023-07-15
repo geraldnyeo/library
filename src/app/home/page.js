@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <div>
-        <p>SOME WORDS</p>
+        <p>THE TITLE</p>
 
         <div id="shelf" className="grid grid-cols-3">
           {posts.map((post) => (
