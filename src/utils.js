@@ -10,8 +10,13 @@ const getPosts = async () => {
     content_type: "post",
   });
 
-  console.log(response.items);
   return response.items;
 };
 
-export default getPosts;
+const getPost = async (entryID) => {
+  const response = await client.getEntry(entryID);
+
+  return response;
+};
+
+export { getPosts, getPost };
