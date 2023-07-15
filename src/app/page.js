@@ -1,19 +1,15 @@
-import getPosts from "../utils.js";
+import Link from "next/link";
 
-export default async function Home() {
-  const posts = await getPosts();
-  console.log(posts);
-
+export default async function Index() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <ul>
-          {posts.map((post) => (
-            <li key={post.sys.id}>
-              <p>{post.fields.description}</p>
-            </li>
-          ))}
-        </ul>
+      <div id="landing" className="flex flex-col items-center">
+        <p>TEXT HERE</p>
+        <Link href="/home" className="bg-sky-200 w-10 h-16"></Link>
+      </div>
+
+      <div id="transition">
+        <p>TEXT HERE</p>
       </div>
     </main>
   );

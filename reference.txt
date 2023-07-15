@@ -1,5 +1,10 @@
 Intergrating contentful from scratch:
  - https://blog.logrocket.com/using-contentful-cms-next-js/
+ - https://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/
+
+Next JS fetching data:
+ - https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops
+ - https://nextjs.org/docs/app/building-your-application/data-fetching/fetching
  
 Values
  - Contenful Management Token (Test Key): CFPAT-kZyPB7dlRsrU6NJAUDpQFHLe2vbUXm1mZXmhV7UuK0s
