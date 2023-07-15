@@ -5,6 +5,11 @@ Intergrating contentful from scratch:
 Next JS fetching data:
  - https://nextjs.org/learn/basics/data-fetching/implement-getstaticprops
  - https://nextjs.org/docs/app/building-your-application/data-fetching/fetching
+ - Revalidation: https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating
+ - https://vercel.com/blog/vercel-cache-api-nextjs-cache
+
+Netlify/Contentful Build Hooks
+ - https://www.netlify.com/blog/2020/04/24/automate-contentful-deploys-with-netlify-webhooks/
  
 Values
  - Contenful Management Token (Test Key): CFPAT-kZyPB7dlRsrU6NJAUDpQFHLe2vbUXm1mZXmhV7UuK0s
