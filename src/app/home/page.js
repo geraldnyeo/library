@@ -13,7 +13,7 @@ export default async function Home() {
 
         <div id="shelf" className="grid grid-cols-3">
           {posts.map((post) => (
-            <Link href={`/post/${post.sys.id}`}>
+            <Link href={`/post/${post.sys.id}`} key={post.sys.id}>
               <div
                 id={`post-${post.sys.id}`}
                 className="bg-white m-5 shadow-md shadow-slate-400"
