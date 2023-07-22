@@ -5,7 +5,14 @@ export default async function Index() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div id="landing" className="flex flex-col items-center">
         <p>TEXT HERE</p>
-        <Link href="/home" className="bg-sky-200 w-10 h-16"></Link>
+        <Link href="/home">
+          <div id="door">
+            <div id="doorfront">
+              <div id="doorknob"></div>
+            </div>
+            <div id="doorframe"></div>
+          </div>
+        </Link>
       </div>
 
       <div id="transition">
