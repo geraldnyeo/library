@@ -16,6 +16,29 @@
   }
 }
 
+#text-one {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#text-two {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -32,6 +55,11 @@ body {
   height: 120px;
   transform-style: preserve-3d;
   transform: perspective(2500px);
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #doorfront {
