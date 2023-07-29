@@ -12,7 +12,7 @@ export default async function Showcase() {
 
       <div>
         {showcases.map((showcase) => (
-          <Link href={`/showcase/${showcase.sys.id}`}>
+          <Link href={`/showcase/${showcase.sys.id}`} key={showcase.sys.id}>
             <div>
               <h2>{showcase.fields.title}</h2>
               <p>{showcase.fields.description}</p>

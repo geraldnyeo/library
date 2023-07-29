@@ -10,14 +10,14 @@ export default async function Showcase({ params }) {
                 <hr className="border-slate-600 my-5"/>
                 <div className="flex flex-row">
                     <div>
-                        <img src={showcase.fields.coverPhoto.fields.file.url} className=""/>
+                        <img src={showcase.fields.coverPhoto.fields.file.url} alt="Cover Photo" />
                     </div>
                     <div>
                         <p className="">{showcase.fields.description}</p>
                     </div>
                     <div>
-                        {showcase.fields.comments.map((comment) => (
-                            <p className="">{comment}</p>
+                        {showcase.fields.comments.map((comment, i) => (
+                            <p key={i}>{comment}</p>
                         ))}
                     </div>
                 </div>
