@@ -17,7 +17,7 @@ async function Home() {
         <h1>Title Text</h1>
       </div>
 
-      <h1>My Work</h1>
+      <h1>Work</h1>
       <div id="showcases">
         <h1 className="">Showcases</h1>
 
