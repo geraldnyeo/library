@@ -16,9 +16,9 @@ export default async function Showcase({ params }) {
                         <p className="">{showcase.fields.description}</p>
                     </div>
                     <div>
-                        {showcase.fields.comments.map((comment, i) => (
+                        {/*showcase.fields.comments.map((comment, i) => (
                             <p key={i}>{comment}</p>
-                        ))}
+                        ))*/}
                     </div>
                 </div>
             </div>

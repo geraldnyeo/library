@@ -4,7 +4,7 @@ export default async function Index() {
   return (
     <main className="flex flex-col items-center justify-between p-24">
       <div id="landing" className="flex flex-col items-center">
-        <p id="text-one" className="text-center m-3f">
+        <p id="text-one" className="text-center m-3">
           TEXT ONE: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
         </p>
 
