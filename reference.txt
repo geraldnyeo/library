@@ -12,12 +12,8 @@ Netlify/Contentful Build Hooks
  - https://www.netlify.com/blog/2020/04/24/automate-contentful-deploys-with-netlify-webhooks/
  
 Values
- - Contenful Management Token (Test Key): CFPAT-kZyPB7dlRsrU6NJAUDpQFHLe2vbUXm1mZXmhV7UuK0s
+ - Contentful Management Token (Old): CFPAT-kZyPB7dlRsrU6NJAUDpQFHLe2vbUXm1mZXmhV7UuK0s
+ - Contentful Management Token (Current): CFPAT-FrKZHW9sKHBUxFw8_6PbGU-i4xZ7TB1fxyvURlz_ADc
  
 TODO:
- - Create new Contentful account with another email specifically for this project.
-    - Replace:
-        - env variables: CONTENTFUL_SPACE_ID, CONTENTFUL_MANAGEMENT_TOKEN
-
-Values
- - Old Contentful Management Token: CFPAT-kZyPB7dlRsrU6NJAUDpQFHLe2vbUXm1mZXmhV7UuK0s
+ - Remove duplicate environment variables WITHOUT NEXT_PUBLIC_ prefix from netlify env variables config for production
