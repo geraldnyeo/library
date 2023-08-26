@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import Navbar from "/src/components/navbar.js";
 import { getPosts, getShowcases } from "/src/utils.js";
 
 async function Home() {
@@ -23,10 +24,16 @@ async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col">
-      <div id="signboard">
-        <h1>Welcome!</h1>
-      </div>
+      <Navbar />
 
+      <div className="flex flex-row justify-center">
+        <Link
+          href="/showcase"
+          className="text-2xl text-center px-4 py-2 bg-yellow-300 border-2 border-yellow-400 shadow-lg"
+        >
+          Showcases
+        </Link>
+      </div>
       <div id="showcase-shelf" className="grid grid-cols-3">
         {showcase_list.map((shelf_list, index) => {
           return (
@@ -55,17 +62,21 @@ async function Home() {
         })}
       </div>
 
-      <div id="posts">
-        <h1 className="">Posts</h1>
-
-        <hr className="" />
-
+      <div className="flex flex-row justify-center mt-10">
+        <Link
+          href="/post"
+          className="text-2xl text-center px-4 py-2 bg-yellow-300 border-2 border-yellow-400 shadow-lg"
+        >
+          Posts
+        </Link>
+      </div>
+      <div>
         <div id="post-shelf" className="grid grid-cols-3">
           {post_list.map((post) => (
             <Link href={`/post/${post.sys.id}`} key={post.sys.id}>
               <div
                 id={`post-${post.sys.id}`}
-                className="bg-white m-5 shadow-md shadow-slate-400"
+                className="bg-yellow-300 m-5 shadow-md shadow-slate-400"
               >
                 <h2>{post.fields.title}</h2>
                 <p>{post.fields.description}</p>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
+import Navbar from "/src/components/navbar.js";
 import { getShowcases } from "/src/utils.js";
 
 export default function Showcase() {
@@ -30,13 +31,16 @@ export default function Showcase() {
 
   return (
     <main className="flex flex-col m-5 justify-center items-center">
+      <Navbar />
       {!loading ? (
         <>
           <h1 className="text-2xl text-center">{showcases[i].fields.title}</h1>
-          <img
-            src={showcases[i].fields.coverPhoto.fields.file.url}
-            className="w-40"
-          />
+          <Link href={`/showcase/${showcases[i].sys.id}`}>
+            <img
+              src={showcases[i].fields.coverPhoto.fields.file.url}
+              className="w-40 my-10 shadow-lg shadow-black"
+            />
+          </Link>
           <div className="flex flex-row my-2">
             <button onClick={handleLeft} className="px-2">
               Left
