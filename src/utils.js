@@ -34,12 +34,12 @@ const getShowcase = async (entryID) => {
   return response;
 };
 
-const getAbout = async () => {
+const getPage = async (page_type) => {
   const response = await client.getEntries({
-    content_type: "aboutPage",
+    content_type: page_type,
   });
 
   return response.items[0];
 };
 
-export { getPosts, getPost, getShowcases, getShowcase, getAbout };
+export { getPosts, getPost, getShowcases, getShowcase, getPage };
