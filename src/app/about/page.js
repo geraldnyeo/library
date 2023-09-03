@@ -1,8 +1,8 @@
 import Navbar from "/src/components/navbar.js";
-import { getAbout } from "/src/utils.js";
+import { getPage } from "/src/utils.js";
 
 export default async function About() {
-  const content = await getAbout();
+  const content = await getPage("aboutPage");
 
   return (
     <main>

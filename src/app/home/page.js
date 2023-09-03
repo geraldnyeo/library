@@ -1,13 +1,18 @@
 import Link from "next/link";
 
 import Navbar from "/src/components/navbar.js";
-import { getPosts, getShowcases } from "/src/utils.js";
+import { getPosts, getShowcases, getPage } from "/src/utils.js";
 
 async function Home() {
+  // load content
+  const content = await getPage("homePage");
+  const showcases = content.fields.showcases;
+  const posts = content.fields.posts;
+
   // no. of items per shelf
   const per_shelf = 3; // change to be based on viewport width
 
-  const showcases = await getShowcases();
+  // const showcases = await getShowcases();
   let showcase_list = [];
 
   // group showcases into shelves
@@ -18,9 +23,8 @@ async function Home() {
   }
   showcase_list.push(showcases.slice(last * per_shelf, (last + 1) * per_shelf));
 
-  // Get first 6 posts sorted by date
-  const posts = await getPosts();
-  const post_list = posts.slice(0, 6);
+  // legacy code
+  const post_list = posts;
 
   return (
     <main className="flex min-h-screen flex-col">

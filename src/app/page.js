@@ -1,6 +1,10 @@
 import Link from "next/link";
 
+import { getPage } from "/src/utils.js";
+
 export default async function Index() {
+  const content = await getPage("landingPage");
+
   return (
     <main className="flex flex-col justify-between p-24 min-h-screen">
       <div
@@ -8,12 +12,11 @@ export default async function Index() {
         className="flex flex-col items-center justify-center grow"
       >
         <p id="text-one" className="text-center my-5">
-          TEXT ONE: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          {content.fields.text1}
         </p>
 
         <p id="text-two" className="text-center my-5">
-          TEXT TWO: do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua.
+          {content.fields.text2}
         </p>
 
         <Link href="/home" className="my-5">

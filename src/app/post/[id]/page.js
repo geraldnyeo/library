@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import Navbar from "/src/components/navbar.js";
 import { getPost } from "/src/utils.js";
 
 export default async function Post({ params }) {
@@ -9,6 +10,7 @@ export default async function Post({ params }) {
 
     return (
         <main>
+            <Navbar />
             <div className="flex flex-col min-h-screen m-5">
                 <h1 className="text-4xl self-center">{post.fields.title}</h1>
                 <div className="m-5">
