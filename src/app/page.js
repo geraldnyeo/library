@@ -6,16 +6,19 @@ export default async function Index() {
   const content = await getPage("landingPage");
 
   return (
-    <main className="flex flex-col justify-between p-24 min-h-screen">
-      <div
-        id="landing"
-        className="flex flex-col items-center justify-center grow"
-      >
-        <p id="text-one" className="text-center my-5">
+    <main className="flex flex-col justify-between px-12 py-36 min-h-screen">
+      <div id="landing" className="flex flex-col items-center grow">
+        <p
+          id="text-one"
+          className="inline-block text-center align-middle my-5 grow"
+        >
           {content.fields.text1}
         </p>
 
-        <p id="text-two" className="text-center my-5">
+        <p
+          id="text-two"
+          className="inline-block text-center align-middle my-5 grow"
+        >
           {content.fields.text2}
         </p>
 
