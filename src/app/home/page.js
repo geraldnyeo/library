@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import Navbar from "/src/components/navbar.js";
-import { getPosts, getShowcases, getPage } from "/src/utils.js";
+import { getPage } from "/src/utils.js";
 
 async function Home() {
   // load content

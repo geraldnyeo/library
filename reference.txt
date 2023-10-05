@@ -14,6 +14,9 @@ Netlify/Contentful Build Hooks
 Values
  - Contentful Management Token (Old): CFPAT-kZyPB7dlRsrU6NJAUDpQFHLe2vbUXm1mZXmhV7UuK0s
  - Contentful Management Token (Current): CFPAT-FrKZHW9sKHBUxFw8_6PbGU-i4xZ7TB1fxyvURlz_ADc
+
+Bookshelf Responsive Design
+ - https://codepen.io/KurtTrowbridge/pen/vGWWNX
  
 TODO (dev)
  - Responsive design
